@@ -55,3 +55,19 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Add CPTs
+ */
+require get_template_directory() . '/cpt/actividades.php';
+require get_template_directory() . '/cpt/eventos.php';
+require get_template_directory() . '/cpt/ofertasacademicas.php';
+require get_template_directory() . '/cpt/sedes.php';
+require get_template_directory() . '/cpt/unidadesacademicas.php';
+require get_template_directory() . '/cpt/vidauniversitaria.php';
+
+/**
+ * Add Taxonomies
+ */
+// require get_template_directory() . '/taxonomies/ofertaacademica.php';
+// require get_template_directory() . '/taxonomies/vidauniversitaria.php';
