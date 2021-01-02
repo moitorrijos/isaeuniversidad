@@ -1,0 +1,49 @@
+.top-header
+  background-color: $primary-blue
+  color: $white
+  padding: 12px 20px
+  position: relative
+  z-index: 1
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+
+  p
+    margin: 0
+    margin-left: 122px
+
+  svg
+    height: 0.9rem
+
+.branding-navigation
+  display: flex
+  flex-flow: row nowrap
+  align-items: center
+  position: relative
+  z-index: 2
+
+  .site-branding
+    width: 100%
+    max-width: 380px
+    margin-top: -30px
+    padding: 20px 20px 0
+
+  nav.main-navigation
+    flex-grow: 1
+
+    ul
+      display: flex
+      flex-flow: row nowrap
+      list-style: none
+      padding: 0
+      margin: 0
+
+      li
+        a
+          display: block
+          padding: 10px 20px
+          text-decoration: none
+          color: $primary-blue
+
+    button.menu-toggle
+      display: none
