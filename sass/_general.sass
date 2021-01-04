@@ -29,6 +29,9 @@ p
   margin: 1rem 0
   line-height: 1.5
 
+.small
+  font-size: 0.9rem
+
 h1, h2, h3, h4
   margin: 2rem 0
 
@@ -64,6 +67,9 @@ h4
   margin-top: 8rem
   margin-bottom: 8rem
 
+.medium-bottom-spacing
+  margin-bottom: 4rem
+
 .rounded-corners
   border-radius: 20px
 
@@ -85,3 +91,34 @@ h4
 
 .margin-bottom-1
   margin-bottom: 1rem
+
+.grid-3
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  justify-content: space-between
+  gap: 40px
+
+.grid-3-carousel
+  display: flex
+  flex-flow: row nowrap
+  gap: 40px
+  overflow-x: hidden
+
+.card
+  dipslay: grid
+  grid-template-rows: 330px 60px 60px
+  gap: 40px
+  padding: 1rem
+  border-radius: 16px
+  background-color: $light-gray
+  width: 408px
+
+  figure
+    padding: 0
+    margin: 0
+
+  img
+    border-radius: 18px
+    width: 408px
+    height: 330px
+    object-fit: cover

@@ -38,7 +38,7 @@ function create_sede_cpt() {
 		'description' => __( 'Sede de universidades', 'isaeuniversidad' ),
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-building',
-		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', 'page-attributes', 'post-formats', 'custom-fields'),
+		'supports' => array('title'),
 		'taxonomies' => array('ofertaacademica'),
 		'public' => true,
 		'show_ui' => true,

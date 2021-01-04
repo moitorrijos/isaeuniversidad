@@ -345,6 +345,10 @@ p {
 	line-height: 1.5;
 }
 
+.small {
+	font-size: 0.9rem;
+}
+
 h1, h2, h3, h4 {
 	margin: 2rem 0;
 }
@@ -389,6 +393,10 @@ h4 {
 	margin-bottom: 8rem;
 }
 
+.medium-bottom-spacing {
+	margin-bottom: 4rem;
+}
+
 .rounded-corners {
 	border-radius: 20px;
 }
@@ -415,6 +423,42 @@ h4 {
 
 .margin-bottom-1 {
 	margin-bottom: 1rem;
+}
+
+.grid-3 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.grid-3-carousel {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 40px;
+	overflow-x: hidden;
+}
+
+.card {
+	dipslay: grid;
+	grid-template-rows: 330px 60px 60px;
+	gap: 40px;
+	padding: 1rem;
+	border-radius: 16px;
+	background-color: #F7F7F8;
+	width: 408px;
+}
+
+.card figure {
+	padding: 0;
+	margin: 0;
+}
+
+.card img {
+	border-radius: 18px;
+	width: 408px;
+	height: 330px;
+	object-fit: cover;
 }
 
 .top-header {
@@ -481,14 +525,17 @@ h4 {
 
 .home-hero {
 	background-color: #0C63E7;
+	position: relative;
 }
 
 .home-hero .home-hero-inner {
-	height: 768px;
+	height: 780px;
 	display: grid;
 	grid-template-columns: 368px 1fr;
-	gap: 60px;
+	gap: 100px;
 	align-items: center;
+	position: relative;
+	z-index: 2;
 }
 
 .home-hero .home-hero-inner .home-hero-info p, .home-hero .home-hero-inner .home-hero-info h1 {
@@ -502,6 +549,28 @@ h4 {
 .home-hero .home-hero-inner .home-hero-info p {
 	font-size: 1.5rem;
 	margin-bottom: 2rem;
+}
+
+svg.circle, svg.semicircle {
+	position: absolute;
+}
+
+svg.circle {
+	left: -150px;
+	top: 100px;
+	z-index: 1;
+}
+
+svg.yellow circle {
+	fill: #FFCA07;
+}
+
+svg.semicircle {
+	height: 150px;
+	left: -150px;
+	top: 0;
+	transform: rotate(180deg);
+	z-index: 1;
 }
 
 footer.site-footer .site-info {

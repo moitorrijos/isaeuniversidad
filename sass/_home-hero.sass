@@ -1,12 +1,15 @@
 .home-hero
   background-color: $primary-blue-bright
+  position: relative
 
   .home-hero-inner
-    height: 768px
+    height: 780px
     display: grid
     grid-template-columns: 368px 1fr
-    gap: 60px
+    gap: 100px
     align-items: center
+    position: relative
+    z-index: 2
 
     .home-hero-info
       p, h1
@@ -18,3 +21,25 @@
       p
         font-size: 1.5rem
         margin-bottom: 2rem
+
+svg
+  &.circle, &.semicircle
+    position: absolute
+
+  &.circle
+    left: -150px
+    top: 100px
+    z-index: 1
+
+  &.yellow
+    circle
+      fill: $primary-yellow
+
+  &.semicircle
+    height: 150px
+    left: -150px
+    top: 0
+    transform: rotate(180deg)
+    z-index: 1
+    
+
