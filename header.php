@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 		<div class="top-header">
 			<p>
-				<?php get_template_part('template-parts/placeholder-icon'); ?>
+				<?php get_template_part('template-parts/icons/placeholder'); ?>
 				Ciudad de Panamá, Panamá
 			</p>
 		</div>

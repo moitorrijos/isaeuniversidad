@@ -11,8 +11,23 @@ img
 a
   color: $primary-blue-bright
 
+  &.primary-button
+    text-decoration: none
+    border-radius: 8px
+    padding: 10px 20px
+    display: inline-flex
+    align-items: center
+
+    svg
+      margin-left: 10px
+
+  &.yellow-background
+    background-color: $primary-yellow
+    color: $primary-blue
+
 p
   margin: 1rem 0
+  line-height: 1.5
 
 h1, h2, h3, h4
   margin: 2rem 0
@@ -33,7 +48,40 @@ h4
   width: 100%
   text-align: center
 
-.max-300
+.max-600
   max-width: 677px
   margin-left: auto
   margin-right: auto
+
+.main-container
+  max-width: 1400px
+  margin-left: auto
+  margin-right: auto
+  padding-left: 4rem
+  padding-right: 4rem
+
+.vertical-spacing
+  margin-top: 8rem
+  margin-bottom: 8rem
+
+.rounded-corners
+  border-radius: 20px
+
+.drop-shadows
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.15)
+
+.inner-4-grid
+  display: flex
+  flex-flow: row wrap
+  gap: 80px
+  justify-content: space-between
+
+  & > div
+    max-width: 260px
+
+.no-vertical-margin
+  margin-top: 0
+  margin-bottom: 0
+
+.margin-bottom-1
+  margin-bottom: 1rem

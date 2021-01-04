@@ -13,18 +13,38 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'isaeuniversidad' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'isaeuniversidad' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'isaeuniversidad' ), 'isaeuniversidad', '<a href="https://moitorrijos.com/">Juan Moisés Torrijos</a>' );
-				?>
+			<div class="main-container inner-4-grid">
+				<div class="footer-info">
+					<div class="footer-logo">
+						<?php get_template_part('template-parts/icons/logo-footer'); ?>
+					</div>
+					<p>
+						<?php echo bloginfo('description'); ?>. Lorem ipsum dolor sit amet. 
+					</p>
+					<h4 class="no-vertical-margin">Campus Central:</h4>
+					<p class="no-vertical-margin">
+						(+507) 278-1432 / 278-1444
+					</p>
+					<p class="no-vertical-margin">
+						info@isaeuniversidad.ac.pa
+					</p>
+					<div class="social-icons">
+						<?php
+							$social_icons = array('facebook', 'instagram', 'twitter');
+							foreach ( $social_icons as $icon ) :
+						?>
+							<img src="<?php echo IMAGEPATH . '/' . $icon . '.svg'; ?>" alt="<?php echo $icon; ?>">
+						<?php endforeach; ?>
+					</div>
+				</div>
+			</div>
 		</div><!-- .site-info -->
+		<div class="copyright">
+			<p>
+				&copy; Copyright <?php echo date('Y'); ?>.
+				Universidad ISAE, todos los derechos reservados.
+			</p>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
