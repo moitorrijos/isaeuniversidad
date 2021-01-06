@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "style-editor.css",
+	"sources": [
+		"../sass/style-editor.sass",
+		"../sass/_colors.sass",
+		"../sass/_fonts.sass"
+	],
+	"names": [],
+	"mappings": "AAGA,AAAA,IAAI,CAAC;CACH,WAAW,EEJM,SAAS,EAAE,UAAU;CFKtC,SAAS,EAAE,IAAI;CACf,WAAW,EAAE,GAAG;CAAG;;AAErB,AAAA,SAAS,CAAC;CACR,KAAK,EAAE,GAAG;CACV,SAAS,EAAE,KAAK;CAAG"
+}

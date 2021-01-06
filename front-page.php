@@ -18,5 +18,8 @@ get_header();
 
 <?php get_template_part( 'template-parts/home', 'ofertasacademicas' ); ?>
 
+<?php get_template_part( 'template-parts/home', 'noticias'); ?>
+
 <?php
+
 get_footer();

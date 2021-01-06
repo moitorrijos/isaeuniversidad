@@ -2,6 +2,7 @@
 
   $sedes_args = array(
     'post_type' => 'sede',
+    'posts_per_page' => '3',
     'order'     =>  'ASC'
   );
   
@@ -20,7 +21,7 @@
         $ciudad = get_field('ciudad');
     ?>
       <a class="card" href="<?php echo get_permalink(); ?>">
-        <figure class="card">
+        <figure>
           <img src="<?php echo $foto['url'] ?>" alt="<?php echo $foto['alt'] ?>">
         </figure>
         <h3 class="margin-bottom-1"><?php echo $ciudad; ?></h3>
