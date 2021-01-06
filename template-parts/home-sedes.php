@@ -19,13 +19,13 @@
         $provincia = get_field('provincia');
         $ciudad = get_field('ciudad');
     ?>
-      <div class="card">
+      <a class="card" href="<?php echo get_permalink(); ?>">
         <figure class="card">
           <img src="<?php echo $foto['url'] ?>" alt="<?php echo $foto['alt'] ?>">
         </figure>
-        <h3><?php echo $ciudad; ?></h3>
-        <p class="small"><?php echo $provincia; ?></p>
-      </div>
+        <h3 class="margin-bottom-1"><?php echo $ciudad; ?></h3>
+        <p class="small no-vertical-margin"><?php echo $provincia; ?></p>
+      </a>
     <?php endwhile; ?>
   </div>
 

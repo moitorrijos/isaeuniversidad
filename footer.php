@@ -19,7 +19,7 @@
 						<?php get_template_part('template-parts/icons/logo-footer'); ?>
 					</div>
 					<p>
-						<?php echo bloginfo('description'); ?>. Lorem ipsum dolor sit amet. 
+						<?php echo bloginfo('description'); ?>. Matricúla ya. #estudianeISAE. 
 					</p>
 					<h4 class="no-vertical-margin">Campus Central:</h4>
 					<p class="no-vertical-margin">

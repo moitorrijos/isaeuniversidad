@@ -39,7 +39,7 @@ function create_ofertaacadmica_cpt() {
 		'description' => __( 'Ofertas académicas', 'isaeuniversidad' ),
 		'labels' => $labels,
 		'menu_icon' => 'dashicons-welcome-learn-more',
-		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'page-attributes', 'post-formats', 'custom-fields'),
+		'supports' => array('title', 'excerpt', 'thumbnail', 'revisions', 'page-attributes', 'post-formats', 'custom-fields'),
 		'taxonomies' => array('taxofertasacademicas'),
 		'public' => true,
 		'show_ui' => true,
