@@ -20,7 +20,7 @@ get_header();
 
 get_template_part( 'template-parts/home', 'sedes' );
 
-get_template_part( 'template-parts/home', 'ofertasacademicas' );
+get_template_part( 'template-parts/home', 'ofertaacademica' );
 
 get_template_part( 'template-parts/home', 'noticias');
 

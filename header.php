@@ -21,23 +21,48 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <?php wp_body_open(); ?>
+
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
+
 		<div class="top-header">
+
 			<p>
+
 				<?php get_template_part('template-parts/icons/placeholder'); ?>
+
 				Ciudad de Panamá, Panamá
+
 			</p>
+
+			<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'top-menu',
+						'menu_id'        => 'top-menu',
+						'container'			 => false,
+						'depth'					 => 0
+					)
+				);
+			?>
+
 		</div>
+
 		<div class="branding-navigation">
+
 			<div class="site-branding">
+
 				<?php the_custom_logo(); ?>
+
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
+
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'isaeuniversidad' ); ?></button>
+
 				<?php
 					wp_nav_menu(
 						array(
@@ -48,6 +73,9 @@
 						)
 					);
 				?>
+
 			</nav><!-- #site-navigation -->
+
 		</div>
+
 	</header><!-- #masthead -->

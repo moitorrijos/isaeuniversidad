@@ -13,7 +13,7 @@ function create_ofertaacadmica_cpt() {
 		'archives' => __( 'Archivos Oferta Académica', 'isaeuniversidad' ),
 		'attributes' => __( 'Atributos Oferta Académica', 'isaeuniversidad' ),
 		'parent_item_colon' => __( 'Padres Oferta Académica:', 'isaeuniversidad' ),
-		'all_items' => __( 'Todas las Oferta Académica', 'isaeuniversidad' ),
+		'all_items' => __( 'Todas las Ofertas', 'isaeuniversidad' ),
 		'add_new_item' => __( 'Añadir nueva Oferta Académica', 'isaeuniversidad' ),
 		'add_new' => __( 'Añadir nueva', 'isaeuniversidad' ),
 		'new_item' => __( 'Nueva Oferta Académica', 'isaeuniversidad' ),
@@ -22,7 +22,7 @@ function create_ofertaacadmica_cpt() {
 		'view_item' => __( 'Ver Oferta Académica', 'isaeuniversidad' ),
 		'view_items' => __( 'Ver Oferta Académica', 'isaeuniversidad' ),
 		'search_items' => __( 'Buscar Oferta Académica', 'isaeuniversidad' ),
-		'not_found' => __( 'No se encontraron Oferta Académica.', 'isaeuniversidad' ),
+		'not_found' => __( 'No se encontraron Ofertas.', 'isaeuniversidad' ),
 		'not_found_in_trash' => __( 'Ningún Oferta Académica encontrado en la papelera.', 'isaeuniversidad' ),
 		'featured_image' => __( 'Imagen destacada', 'isaeuniversidad' ),
 		'set_featured_image' => __( 'Establecer imagen destacada', 'isaeuniversidad' ),
@@ -32,7 +32,7 @@ function create_ofertaacadmica_cpt() {
 		'uploaded_to_this_item' => __( 'Subido a esta Oferta Académica', 'isaeuniversidad' ),
 		'items_list' => __( 'Lista de Oferta Académica', 'isaeuniversidad' ),
 		'items_list_navigation' => __( 'Navegación por el listado de Oferta Académica', 'isaeuniversidad' ),
-		'filter_items_list' => __( 'Lista de Oferta Académica filtradas', 'isaeuniversidad' ),
+		'filter_items_list' => __( 'Lista de Ofertas filtradas', 'isaeuniversidad' ),
 	);
 	$args = array(
 		'label' => __( 'Oferta Académica', 'isaeuniversidad' ),

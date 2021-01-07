@@ -343,6 +343,7 @@ a.primary-button {
 	padding: 10px 20px;
 	display: inline-flex;
 	align-items: center;
+	font-size: 0.95rem;
 }
 
 a.primary-button svg {
@@ -576,24 +577,48 @@ h4 {
 .top-header {
 	background-color: #04256C;
 	color: #ffffff;
-	padding: 18px 40px;
+	padding: 2px 40px;
 	position: relative;
 	z-index: 1;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	font-size: 0.9rem;
+	align-items: center;
+	font-size: 0.8rem;
+	line-height: 1;
 }
 
 .top-header p {
-	margin: 0;
+	margin-top: 8px;
+	margin-bottom: 8px;
 	margin-left: 120px;
-	line-height: 1;
 	color: #ffffff;
 }
 
 .top-header svg {
 	height: 0.9rem;
+}
+
+.top-header ul {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.top-header ul li a {
+	display: block;
+	padding: 8px 24px;
+	color: #ffffff;
+	font-weight: 500;
+	text-decoration-color: #ffffff;
+	text-decoration-thickness: 2px;
+}
+
+.top-header ul li.primary-button a {
+	background: #0076FF;
+	text-decoration: none;
+	margin-left: 12px;
 }
 
 .branding-navigation {
@@ -711,11 +736,44 @@ svg.semicircle {
 	z-index: 1;
 }
 
-.home-ofertasacademicas:nth-child(odd) {
+.home-ofertaacademica .image-info img {
+	border-radius: 20px;
+}
+
+.home-ofertaacademica:nth-child(odd) {
 	background-color: #F7F7F8;
 }
 
-.home-ofertasacademicas p {
+.home-ofertaacademica div {
+	background-repeat: no-repeat;
+}
+
+.home-ofertaacademica .oferta-1 {
+	background-image: url(../images/background-isae-1.svg);
+	background-position: 80% center;
+}
+
+.home-ofertaacademica .oferta-2 {
+	background-image: url(../images/background-isae-2.svg);
+	background-position: 20% center;
+}
+
+.home-ofertaacademica .oferta-3 {
+	background-image: url(../images/background-isae-3.svg);
+	background-position: 80% center;
+}
+
+.home-ofertaacademica .oferta-4 {
+	background-image: url(../images/background-isae-4.svg);
+	background-position: 20% center;
+}
+
+.home-ofertaacademica .oferta-5 {
+	background-image: url(../images/background-isae-5.svg);
+	background-position: 80% center;
+}
+
+.home-ofertaacademica p {
 	margin-bottom: 2rem;
 }
 

@@ -15,9 +15,9 @@
 
 ?>
 
-  <div class="home-ofertasacademicas">
+  <div class="home-ofertaacademica">
 
-      <div class="main-container home-grid vertical-padding">
+      <div class="main-container home-grid vertical-padding <?php echo 'oferta-' . ((int)$oa_query->current_post + 1); ?>">
 
         <?php if ( $oa_query->current_post % 2 === 0 ) : ?>
 

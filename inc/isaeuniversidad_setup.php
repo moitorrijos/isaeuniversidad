@@ -48,6 +48,7 @@ if ( ! function_exists( 'isaeuniversidad_setup' ) ) :
 		register_nav_menus(
 			array(
 				'menu-1' => esc_html__( 'Primary', 'isaeuniversidad' ),
+				'top-menu' => esc_html__( 'Top Menu', 'isaeuniversidad' )
 			)
 		);
 

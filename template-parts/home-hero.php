@@ -23,7 +23,7 @@
   <div class="circles">
     <?php create_semicircle(); ?>
     <?php create_circle('transparent', '#FFEA9C'); ?>
-    <?php create_semicircle('#84D0FF', 'transparent', array('top' => '40%', 'left' => '33%')); ?>
-    <?php create_circle('transparent', '#84D0FF', array('top' => '50%', 'left' => '33%')); ?>
+    <?php create_semicircle('#84D0FF', 'transparent', array('top' => '40%', 'left' => '34%')); ?>
+    <?php create_circle('transparent', '#84D0FF', array('top' => '50%', 'left' => '34%')); ?>
   </div>
 </div> <!-- home-hero -->
