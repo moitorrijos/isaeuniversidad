@@ -10,7 +10,10 @@ function isaeuniversidad_scripts() {
 	wp_style_add_data( 'isaeuniversidad-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'isaeuniversidad-navigation', get_template_directory_uri() . '/js/navigation.js', array(), ISAE_VERSION, true );
-	wp_enqueue_script( 'isaeuniversidad-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js', array(), ISAE_VERSION, true );
+	wp_enqueue_script( 'aosjs', 'https://unpkg.com/aos@next/dist/aos.js', array(), ISAE_VERSION, true );
+	wp_enqueue_script( 'isaeuniversidad-aos', get_template_directory_uri() . '/js/local-aos.js', array('aosjs'), ISAE_VERSION, true );
+
+	wp_enqueue_style( 'aos-css', 'https://unpkg.com/aos@next/dist/aos.css', array(), ISAE_VERSION );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

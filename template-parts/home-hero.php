@@ -1,6 +1,9 @@
 <div class="home-hero">
   <div class="main-container home-hero-inner">
-    <div class="home-hero-info">
+    <div
+      class="home-hero-info"
+      data-aos="fade-up"
+    >
       <h1>Matrículas Abiertas</h1>
       <p>
         La U de las oportunidades. Matricúlate hoy mismo.
@@ -12,7 +15,11 @@
         <?php get_arrow_circle_right( '#04256C' ); ?>
       </a>
     </div>
-    <div class="home-hero-image">
+    <div
+      class="home-hero-image"
+      data-aos="fade-left"
+      data-aos-delay="50"
+    >
       <img
         class="rounded-corners"
         src="<?php echo IMAGEPATH; ?>/sede-principal.jpg"
@@ -23,7 +30,5 @@
   <div class="circles">
     <?php create_semicircle(); ?>
     <?php create_circle('transparent', '#FFEA9C'); ?>
-    <?php create_semicircle('#84D0FF', 'transparent', array('top' => '40%', 'left' => '34%')); ?>
-    <?php create_circle('transparent', '#84D0FF', array('top' => '50%', 'left' => '34%')); ?>
   </div>
 </div> <!-- home-hero -->

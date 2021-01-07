@@ -22,7 +22,11 @@ if ( $noticias->have_posts() ) :
       
       ?>
     
-          <div class="slim-card">
+          <div
+            class="slim-card"
+            data-aos="fade-up"
+            data-aos-delay="<?php echo ((int)$noticias->current_post * 300); ?>"
+          >
           
             <figure>
 

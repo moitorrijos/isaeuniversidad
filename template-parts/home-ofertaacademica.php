@@ -13,15 +13,22 @@
 
       $oa_query->the_post();
 
+      $current_post = ((int)$oa_query->current_post + 1);
+
 ?>
 
   <div class="home-ofertaacademica">
 
-      <div class="main-container home-grid vertical-padding <?php echo 'oferta-' . ((int)$oa_query->current_post + 1); ?>">
+      <div
+        class="main-container home-grid vertical-padding <?php echo 'oferta-' . $current_post; ?>"
+      >
 
         <?php if ( $oa_query->current_post % 2 === 0 ) : ?>
 
-          <div class="text-info">
+          <div
+            class="text-info"
+            data-aos="fade-up"
+          >
 
             <h2><?php the_title(); ?></h2>
 
@@ -34,7 +41,11 @@
             
           </div>
 
-          <div class="image-info">
+          <div
+            class="image-info"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
           
             <?php the_post_thumbnail(); ?>
           
@@ -42,13 +53,20 @@
 
         <?php else : ?>
 
-          <div class="image-info">
+          <div
+            class="image-info"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
         
             <?php the_post_thumbnail(); ?>
           
           </div>
 
-          <div class="text-info">
+          <div
+            class="text-info"
+            data-aos="fade-up"
+          >
 
             <h2><?php the_title(); ?></h2>
 

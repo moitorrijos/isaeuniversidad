@@ -1,14 +1,15 @@
 <?php 
 
-  $sedes_args = array(
-    'post_type' => 'sede',
-    'posts_per_page' => '3',
-    'order'     =>  'ASC'
+  $sedes_query = new WP_Query( array(
+      'post_type' => 'sede',
+      'posts_per_page' => '3',
+      'order'     =>  'ASC'
+    ) 
   );
   
-  $sedes_query = new WP_Query( $sedes_args );
-  
   if ( $sedes_query->have_posts() ) :
+
+    $current_sedes = ((int)$sedes_query->current_post + 1);
 
 ?>
 
@@ -20,7 +21,12 @@
         $provincia = get_field('provincia');
         $ciudad = get_field('ciudad');
     ?>
-      <a class="card" href="<?php echo get_permalink(); ?>">
+      <a
+        class="card"
+        href="<?php echo get_permalink(); ?>"
+        data-aos="fade-up"
+        data-aos-delay="<?php echo (((int)$sedes_query->current_post + 1) * 200); ?>"
+      >
         <figure>
           <img src="<?php echo $foto['url'] ?>" alt="<?php echo $foto['alt'] ?>">
         </figure>
@@ -30,4 +36,4 @@
     <?php endwhile; ?>
   </div>
 
-<?php endif; ?>
+<?php endif; wp_reset_query(); ?>

@@ -10,7 +10,13 @@ get_header();
 
 <?php get_template_part( 'template-parts/home', 'hero' ); ?>
 
-<h1 class="centered max-600 vertical-spacing">
+<h1
+  class="centered max-600 vertical-spacing"
+  data-aos="fade-up"
+  data-aos-offset="50"
+  data-aos-duration="1000"
+  data-aos-easing="ease-in-out"
+>
 
   <?php echo bloginfo( 'description' ); ?>
 
