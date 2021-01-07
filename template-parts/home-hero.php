@@ -2,7 +2,11 @@
   <div class="main-container home-hero-inner">
     <div class="home-hero-info">
       <h1>Matrículas Abiertas</h1>
-      <p>La U de las oportunidades. Matricúlate hoy mismo. <em class="highlight">#estudianeISAE</em>. Estudia en cualquiera de nuestras 8 sedes.</p>
+      <p>
+        La U de las oportunidades. Matricúlate hoy mismo.
+        Estudia en cualquiera de nuestras 8 sedes.
+        <em class="highlight">#estudianeISAE</em>
+      </p>
       <a href="#0" class="primary-button yellow-background">
         Más información
         <?php get_arrow_circle_right( '#04256C' ); ?>

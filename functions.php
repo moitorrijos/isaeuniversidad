@@ -72,3 +72,17 @@ require get_template_directory() . '/cpt/vidauniversitaria.php';
 
 require get_template_directory() . '/inc/icons.php';
 require get_template_directory() . '/inc/circles.php';
+
+// Filter wp_nav_menu() to add additional links and other output
+function new_nav_menu_items( $items ) {
+	$search_link = '<li class="search">
+		<a href="#search">
+			<svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M14.7877 12.9249L20 18.0957L18.0226 20.0574L12.7826 14.859C11.4688 15.7515 9.88198 16.274 8.17338 16.274C3.66668 16.274 0 12.6374 0 8.16571C0 3.69487 3.66668 0.057373 8.17338 0.057373C12.6809 0.057373 16.3476 3.69487 16.3476 8.16571C16.3476 9.94237 15.768 11.5874 14.7877 12.9249ZM8.17438 2.43488C4.98903 2.43488 2.39757 5.00571 2.39757 8.16571C2.39757 11.3257 4.98819 13.8965 8.17438 13.8965C11.3597 13.8965 13.9512 11.3257 13.9512 8.16571C13.9512 5.00571 11.3597 2.43488 8.17438 2.43488Z" fill="#1E1F22"/>
+			</svg>
+		</a>
+	</li>';
+	$items = $items . $search_link;
+	return $items;
+}
+add_filter( 'wp_nav_menu_items', 'new_nav_menu_items' );

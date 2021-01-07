@@ -7,10 +7,11 @@
   display: flex
   flex-flow: row wrap
   justify-content: space-between
+  font-size: 0.9rem
 
   p
     margin: 0
-    margin-left: 160px
+    margin-left: 120px
     line-height: 1
     color: $white
 
@@ -21,11 +22,12 @@
   display: flex
   flex-flow: row nowrap
   align-items: center
+  justify-content: space-between
   position: relative
   z-index: 2
   // max-height: 100px
-  padding: 0 40px
-  background-clip: $white
+  padding: 0 20px
+  background-color: $white
 
   .site-branding
     width: 100%
@@ -35,21 +37,41 @@
 
   nav.main-navigation
     flex-grow: 1
+    max-width: 1100px
+    font-size: 0.95rem
 
     ul
       display: flex
       flex-flow: row nowrap
       list-style: none
-      justify-content: flex-end
+      justify-content: space-between
       padding: 0
       margin: 0
 
       li
+        display: flex
+        flex-direction: row
+        align-items: stretch
+
         a
           display: block
-          padding: 10px 20px
+          padding: 40px 16px
           text-decoration: none
-          color: $primary-blue
+          color: $primary-text-100
+          line-height: 1.5
+          font-weight: 500
+          background:
+            image: url(../images/down-arrow.svg)
+            repeat: no-repeat
+            position: 100% 50%
+            size: 10px
+
+          svg
+            width: 20px
+            height: 20px
+
+        &:last-child a
+          background-image: none
 
     button.menu-toggle
       display: none

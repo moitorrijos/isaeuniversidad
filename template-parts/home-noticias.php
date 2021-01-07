@@ -8,15 +8,16 @@ if ( $noticias->have_posts() ) :
 
 ?>
 
-  <div class="home-noticias vertical-padding">
+  <div class="home-noticias medium-vertical-padding large-bottom-padding">
+
+    <h2 class="centered large-bottom-spacing">Últimas Noticias</h2>
 
     <div class="main-container grid-3 slim-cards">
-
-
 
       <?php
       
         while ( $noticias->have_posts() ) :
+
           $noticias->the_post();
       
       ?>

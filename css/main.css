@@ -313,7 +313,7 @@ template {
 
 body {
 	font-family: "DM Sans", sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	color: #04256C;
 }
 
@@ -408,6 +408,11 @@ h4 {
 	padding-right: 4rem;
 }
 
+.medium-vertical-padding {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
 .vertical-spacing {
 	margin-top: 8rem;
 	margin-bottom: 8rem;
@@ -420,6 +425,14 @@ h4 {
 
 .medium-bottom-spacing {
 	margin-bottom: 4rem;
+}
+
+.large-bottom-spacing {
+	margin-bottom: 6rem;
+}
+
+.large-bottom-padding {
+	padding-bottom: 8rem;
 }
 
 .rounded-corners {
@@ -491,9 +504,6 @@ h4 {
 
 .card {
 	width: 33%;
-	display: grid;
-	grid-template-rows: 300px 40px 20px;
-	gap: 10px;
 	padding: 1rem 1rem 2rem;
 	border-radius: 16px;
 	background-color: #F7F7F8;
@@ -501,11 +511,12 @@ h4 {
 	text-decoration: none;
 }
 
-.card h1, .card h2, .card h3, .card h4, .card p {
-	margin: 0;
+.card h1, .card h2, .card h3, .card h4 {
+	margin: 35px 16px 8px;
 }
 
 .card p {
+	margin: 0 16px;
 	font-size: 1.1rem;
 }
 
@@ -571,11 +582,12 @@ h4 {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
+	font-size: 0.9rem;
 }
 
 .top-header p {
 	margin: 0;
-	margin-left: 160px;
+	margin-left: 120px;
 	line-height: 1;
 	color: #ffffff;
 }
@@ -588,10 +600,11 @@ h4 {
 	display: flex;
 	flex-flow: row nowrap;
 	align-items: center;
+	justify-content: space-between;
 	position: relative;
 	z-index: 2;
-	padding: 0 40px;
-	background-clip: #ffffff;
+	padding: 0 20px;
+	background-color: #ffffff;
 }
 
 .branding-navigation .site-branding {
@@ -603,22 +616,45 @@ h4 {
 
 .branding-navigation nav.main-navigation {
 	flex-grow: 1;
+	max-width: 1100px;
+	font-size: 0.95rem;
 }
 
 .branding-navigation nav.main-navigation ul {
 	display: flex;
 	flex-flow: row nowrap;
 	list-style: none;
-	justify-content: flex-end;
+	justify-content: space-between;
 	padding: 0;
 	margin: 0;
 }
 
+.branding-navigation nav.main-navigation ul li {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
 .branding-navigation nav.main-navigation ul li a {
 	display: block;
-	padding: 10px 20px;
+	padding: 40px 16px;
 	text-decoration: none;
-	color: #04256C;
+	color: #1E1F22;
+	line-height: 1.5;
+	font-weight: 500;
+	background-image: url(../images/down-arrow.svg);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	background-size: 10px;
+}
+
+.branding-navigation nav.main-navigation ul li a svg {
+	width: 20px;
+	height: 20px;
+}
+
+.branding-navigation nav.main-navigation ul li:last-child a {
+	background-image: none;
 }
 
 .branding-navigation nav.main-navigation button.menu-toggle {
@@ -713,15 +749,17 @@ footer.site-footer .site-info .social-icons img {
 }
 
 footer.site-footer .copyright {
-	padding: 10px 40px;
+	padding: 16px 40px;
 	background-color: #031E56;
-	color: #ffffff;
 	text-align: center;
 }
 
 footer.site-footer .copyright p {
 	margin: 0;
+	color: #ffffff;
 	opacity: 0.85;
+	font-size: 0.9rem;
+	line-height: 1;
 }
 
 /*# sourceMappingURL=main.css.map */
