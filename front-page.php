@@ -32,4 +32,8 @@ get_template_part( 'template-parts/home', 'noticias');
 
 get_template_part( 'template-parts/home', 'actividades');
 
+get_template_part( 'template-parts/home', 'solicitud' );
+
+get_template_part( 'template-parts/home', 'logos');
+
 get_footer();

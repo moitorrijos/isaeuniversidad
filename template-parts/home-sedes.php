@@ -21,18 +21,22 @@
         $provincia = get_field('provincia');
         $ciudad = get_field('ciudad');
     ?>
-      <a
+      <div
         class="card"
-        href="<?php echo get_permalink(); ?>"
         data-aos="fade-up"
         data-aos-delay="<?php echo (((int)$sedes_query->current_post + 1) * 200); ?>"
       >
-        <figure>
-          <img src="<?php echo $foto['url'] ?>" alt="<?php echo $foto['alt'] ?>">
-        </figure>
-        <h3 class="margin-bottom-1"><?php echo $ciudad; ?></h3>
-        <p class="small no-vertical-margin"><?php echo $provincia; ?></p>
-      </a>
+        <a
+          class="inner-card-link"
+          href="<?php echo get_permalink(); ?>"
+        >
+          <figure>
+            <img src="<?php echo $foto['url'] ?>" alt="<?php echo $foto['alt'] ?>">
+          </figure>
+          <h3 class="margin-bottom-1"><?php echo $ciudad; ?></h3>
+          <p class="small no-vertical-margin"><?php echo $provincia; ?></p>
+        </a>
+      </div>
     <?php endwhile; ?>
   </div>
 

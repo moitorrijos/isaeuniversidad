@@ -1,0 +1,29 @@
+.seccion-solicitud
+  background-color: $primary-blue
+
+  .info-text
+    h2, h3, p
+      color: $white
+
+form.solicitud
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: repeat(4, 1fr)
+  gap: 36px
+
+  input, select
+    padding: 10px 1rem
+    border-radius: 8px
+
+  select
+    appearance: none
+    border: none
+    background:
+      image: url(../images/down-arrow.svg)
+      repeat: no-repeat
+      position: 95% 50%
+      size: 10px
+
+  button
+    justify-self: start
+    width: auto

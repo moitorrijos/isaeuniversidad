@@ -20,7 +20,7 @@
   <div class="home-ofertaacademica">
 
       <div
-        class="main-container home-grid vertical-padding <?php echo 'oferta-' . $current_post; ?>"
+        class="main-container home-grid large-vertical-padding <?php echo 'oferta-' . $current_post; ?>"
       >
 
         <?php if ( $oa_query->current_post % 2 === 0 ) : ?>
@@ -43,7 +43,7 @@
 
           <div
             class="image-info"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-delay="100"
           >
           
@@ -55,7 +55,7 @@
 
           <div
             class="image-info"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="100"
           >
         

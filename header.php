@@ -30,6 +30,8 @@
 
 		<div class="top-header">
 
+			<!-- <div class="white-spacing"></div> -->
+
 			<p>
 
 				<?php get_template_part('template-parts/icons/placeholder'); ?>
