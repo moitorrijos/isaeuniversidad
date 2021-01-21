@@ -31,6 +31,7 @@ a
   font-size: 0.95rem
   border: none
   appearance: none
+  transition: all 0.25s ease-in-out
 
   svg
     margin-left: 10px
@@ -46,6 +47,10 @@ a
   &.secondary-blue-background
     background-color: $secondary-blue
     color: $white
+
+  &:hover
+    @include hover-effect
+
 
 p
   margin: 1rem 0
