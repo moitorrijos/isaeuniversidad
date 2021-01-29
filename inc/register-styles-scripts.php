@@ -24,3 +24,9 @@ function isaeuniversidad_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'isaeuniversidad_scripts' );
+
+function isaeuniversidad_scripts_admin() {
+	wp_enqueue_style( 'isaeuniversidad-font', 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap', array(), ISAE_VERSION, 'all' );
+}
+
+add_action( 'admin_enqueue_scripts', 'isaeuniversidad_scripts_admin' );
