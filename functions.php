@@ -59,7 +59,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Add CPTs
  */
-require get_template_directory() . '/cpt/actividades.php';
+// require get_template_directory() . '/cpt/actividades.php';
 require get_template_directory() . '/cpt/eventos.php';
 require get_template_directory() . '/cpt/ofertasacademicas.php';
 require get_template_directory() . '/cpt/sedes.php';
@@ -88,3 +88,23 @@ function add_search_icon( $items, $args ) {
 	return $items;
 }
 add_filter( 'wp_nav_menu_items', 'add_search_icon', 10, 2 );
+
+add_action('rest_api_init', 'register_rest_images' );
+
+function register_rest_images() {
+	register_rest_field( 
+		'post',
+		'featured_image_src',
+		array(
+			'get_callback'    => 'get_rest_featured_image'
+		)
+	);
+}
+
+function get_rest_featured_image( $object ) {
+	if( $object['featured_media'] ){
+			$img = wp_get_attachment_image_src( $object['featured_media'], 'large' );
+			return $img[0];
+	}
+	return false;
+}
