@@ -1,0 +1,14 @@
+.ant-alert.ant-alert-info.ant-alert-no-icon {
+  display: none; }
+
+#wpcontent, #wpfooter {
+  margin-left: 217px; }
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+  width: 217px; }
+
+#adminmenu .wp-submenu {
+  left: 217px; }
+
+.auto-fold .interface-interface-skeleton {
+  left: 217px; }

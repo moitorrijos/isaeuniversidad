@@ -108,3 +108,10 @@ function get_rest_featured_image( $object ) {
 	}
 	return false;
 }
+
+function moi_footer_admin () {
+	$wordpress = '<a href="//es.wordpress.org">WordPress</a>';
+	$moitorrijos = '<a href="//moitorrijos.com">Juan Moisés Torrijos</a>';
+  echo 'Creado utilizando ' . $wordpress . ' por ' . $moitorrijos . '.';
+}
+add_filter('admin_footer_text', 'moi_footer_admin');
