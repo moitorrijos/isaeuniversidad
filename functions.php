@@ -30,6 +30,11 @@ require get_template_directory() . '/inc/register-widget-area.php';
 require get_template_directory() . '/inc/register-styles-scripts.php';
 
 /**
+ * Login Styles
+ */
+require get_template_directory() . '/inc/register-login-styles.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

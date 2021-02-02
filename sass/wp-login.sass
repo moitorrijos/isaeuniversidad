@@ -1,0 +1,83 @@
+@import 'normalize'
+@import 'colors'
+@import 'fonts'
+
+body
+  background-color: $primary-blue
+  color: $white
+  font-family: $main-font-family
+  font-size: 1.2rem
+
+#login
+  width: 400px
+
+a
+  color: $light-gray
+
+.login
+  position: relative
+
+  h1
+    position: relative
+    z-index: 2
+    a
+      background-image: url(../images/isae-icon-logo.svg)
+      background-repeat: no-repeat
+      background-color: transparent
+      background-size: 190px 190px
+      width: 190px
+      height: 190px
+      margin: 0 auto -2rem
+
+  form
+    position: relative
+    z-index: 1
+    border-bottom: 12px solid $primary-yellow
+    padding-bottom: 1.5rem
+    margin-top: 0
+
+    .button.wp-hide-pw .dashicons
+      color: $primary-blue
+
+    input[type="submit"]
+      background-color: $primary-blue
+      color: $light-gray
+      font-size: 1rem
+      display: block
+      width: 100%
+      margin-top: 1rem
+      margin-bottom: 0
+      border-radius: 6px
+
+      &:hover
+        background-color: $primary-blue-600
+
+  p
+    font-size: 1rem
+
+    &.message
+      color: $light-gray
+      margin-top: 4rem
+      background-color: transparent
+      border: none
+    
+    &#backtoblog, &#nav
+      font-size: 1rem
+      a
+        color: $light-gray
+        font-style: italic
+
+        &:hover
+          color: darken($light-gray, 5%)
+
+    &#backtoblog
+      display: none
+
+  #login_error
+    border: none
+    padding: 1rem 2rem
+    margin-top: 3rem
+    margin-bottom: 0
+    font-size: 1rem
+    background-color: $red
+    color: $white
