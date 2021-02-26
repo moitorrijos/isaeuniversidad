@@ -6,7 +6,7 @@
 function create_ofertaacadmica_cpt() {
 
 	$labels = array(
-		'name' => _x( 'Oferta Académica', 'Post Type General Name', 'isaeuniversidad' ),
+		'name' => _x( 'Ofertas Académicas', 'Post Type General Name', 'isaeuniversidad' ),
 		'singular_name' => _x( 'Oferta Académica', 'Post Type Singular Name', 'isaeuniversidad' ),
 		'menu_name' => _x( 'Oferta Académica', 'Admin Menu text', 'isaeuniversidad' ),
 		'name_admin_bar' => _x( 'Oferta Académica', 'Add New on Toolbar', 'isaeuniversidad' ),

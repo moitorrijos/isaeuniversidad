@@ -64,9 +64,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Add CPTs
  */
+
 // require get_template_directory() . '/cpt/actividades.php';
 require get_template_directory() . '/cpt/eventos.php';
 require get_template_directory() . '/cpt/ofertasacademicas.php';
+require get_template_directory() . '/cpt/carreras.php';
+require get_template_directory() . '/cpt/departamentos.php';
 require get_template_directory() . '/cpt/sedes.php';
 require get_template_directory() . '/cpt/unidadesacademicas.php';
 require get_template_directory() . '/cpt/vidauniversitaria.php';
@@ -98,7 +101,7 @@ add_action('rest_api_init', 'register_rest_images' );
 
 function register_rest_images() {
 	register_rest_field( 
-		'post',
+		['post', 'ofertaacadmica', 'sede', 'carrera', 'departamento'],
 		'featured_image_src',
 		array(
 			'get_callback'    => 'get_rest_featured_image'
@@ -116,7 +119,8 @@ function get_rest_featured_image( $object ) {
 
 function moi_footer_admin () {
 	$wordpress = '<a href="//es.wordpress.org">WordPress</a>';
+	$frontity = '<a href="https://frontity.org/">Frontity</a>';
 	$moitorrijos = '<a href="//moitorrijos.com">Juan Moisés Torrijos</a>';
-  echo 'Creado utilizando ' . $wordpress . ' por ' . $moitorrijos . '.';
+  echo 'Creado utilizando ' . $wordpress . ' y ' . $frontity . ' por ' . $moitorrijos . '.';
 }
 add_filter('admin_footer_text', 'moi_footer_admin');
