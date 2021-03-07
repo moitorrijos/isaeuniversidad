@@ -65,7 +65,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Add CPTs
  */
 
-// require get_template_directory() . '/cpt/actividades.php';
 require get_template_directory() . '/cpt/eventos.php';
 require get_template_directory() . '/cpt/ofertasacademicas.php';
 require get_template_directory() . '/cpt/carreras.php';
@@ -73,6 +72,7 @@ require get_template_directory() . '/cpt/departamentos.php';
 require get_template_directory() . '/cpt/sedes.php';
 require get_template_directory() . '/cpt/unidadesacademicas.php';
 require get_template_directory() . '/cpt/vidauniversitaria.php';
+require get_template_directory() . '/cpt/investigaciones.php';
 
 /**
  * SVG Graphics and Icons
@@ -101,7 +101,7 @@ add_action('rest_api_init', 'register_rest_images' );
 
 function register_rest_images() {
 	register_rest_field( 
-		['post', 'ofertaacadmica', 'sede', 'carrera', 'departamento'],
+		['post', 'ofertaacadmica', 'sede', 'carrera', 'departamento', 'investigacion'],
 		'featured_image_src',
 		array(
 			'get_callback'    => 'get_rest_featured_image'
@@ -111,8 +111,8 @@ function register_rest_images() {
 
 function get_rest_featured_image( $object ) {
 	if( $object['featured_media'] ){
-			$img = wp_get_attachment_image_src( $object['featured_media'], 'large' );
-			return $img[0];
+		$img = wp_get_attachment_image_src( $object['featured_media'], 'large' );
+		return $img[0];
 	}
 	return false;
 }

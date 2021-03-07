@@ -14,3 +14,16 @@ En el archivo package.json se debe cambiar la línea dentro de _scripts_ de brow
 Para empezar a desarrollar es necesario ejecutar el comando `npm run watch` y abrir el navegador en _localhost:8000_.
 
 ![ISAE Universidad Screenshot](./screenshot.png)
+
+Plugins utilizados:
+* advanced-custom-fields
+* acf-to-rest-api
+* classic-editor
+* debug-bar
+* duplicate-page
+* post-types-order
+* query-monitor
+* real-media-library-lite
+* safe-svg
+* simple-custom-post-order
+* wp-api-menus
