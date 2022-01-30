@@ -52,6 +52,7 @@ function create_ofertaacadmica_cpt() {
 		'hierarchical' => true,
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
+		'show_in_graphql' => true,
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);
