@@ -51,6 +51,8 @@ function create_investigacion_cpt() {
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
 		'show_in_graphql' => true,
+		'graphql_single_name' => 'investigacion',
+		'graphql_plural_name' => 'investigaciones',
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);

@@ -51,6 +51,8 @@ function create_evento_cpt() {
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
 		'show_in_graphql' => true,
+		'graphql_single_name' => 'evento',
+		'graphql_plural_name' => 'eventos',
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);

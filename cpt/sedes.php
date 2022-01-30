@@ -52,6 +52,8 @@ function create_sede_cpt() {
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
 		'show_in_graphql' => true,
+		'graphql_single_name' => 'sede',
+		'graphql_plural_name' => 'sedes',
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);

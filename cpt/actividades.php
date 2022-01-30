@@ -52,6 +52,8 @@ function create_actividad_cpt() {
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
 		'show_in_graphql' => true,
+		'graphql_single_name' => 'actividad',
+		'graphql_plural_name' => 'actividades',
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);

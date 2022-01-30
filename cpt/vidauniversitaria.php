@@ -52,6 +52,8 @@ function create_vidauniversitaria_cpt() {
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
 		'show_in_graphql' => true,
+		'graphql_single_name' => 'VidaUniversitaria',
+		'graphql_plural_name' => 'VidaUniversitaria',
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);

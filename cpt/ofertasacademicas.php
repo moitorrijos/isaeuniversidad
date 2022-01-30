@@ -53,6 +53,8 @@ function create_ofertaacadmica_cpt() {
 		'exclude_from_search' => false,
 		'show_in_rest' => true,
 		'show_in_graphql' => true,
+		'graphql_single_name' => 'ofertaacademica',
+		'graphql_plural_name' => 'ofertasacademicas',
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);
