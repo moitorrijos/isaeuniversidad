@@ -110,7 +110,7 @@ function register_rest_images() {
 }
 
 function get_rest_featured_image( $object ) {
-	if( $object['featured_media'] ){
+	if( isset( $object['featured_media'] ) ){
 		$img = wp_get_attachment_image_src( $object['featured_media'], 'large' );
 		return $img[0];
 	}
