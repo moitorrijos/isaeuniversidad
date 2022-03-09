@@ -2,7 +2,7 @@
 
 function isaeuniversidad_wplogin_styles() {
 
-	wp_enqueue_style('login-styles', get_template_directory_uri() . '/css/wp-login.css');
+	wp_enqueue_style('login-styles', get_template_directory_uri() . '/css/wp-login.css', array(), '1.0.0', 'all');
 
 }
 

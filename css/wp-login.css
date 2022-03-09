@@ -369,6 +369,10 @@ a {
 	background-color: #031E56;
 }
 
+.login form #language-switcher {
+	display: none;
+}
+
 .login p {
 	font-size: 1rem;
 }

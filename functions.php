@@ -73,6 +73,7 @@ require get_template_directory() . '/cpt/sedes.php';
 require get_template_directory() . '/cpt/unidadesacademicas.php';
 require get_template_directory() . '/cpt/vidauniversitaria.php';
 require get_template_directory() . '/cpt/investigaciones.php';
+require get_template_directory() . '/cpt/carrusel.php';
 
 /**
  * SVG Graphics and Icons
